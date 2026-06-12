@@ -112,13 +112,13 @@
       max-width: 1152px;
       margin: 0 auto;
     }
-    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo { display: flex; align-items: center; gap: 12px; }
     .logo-paw {
-      width: 52px; height: 52px;
-      border-radius: 14px;
-      background: var(--bg);
+      width: 64px; height: 48px;
+      border-radius: 10px;
+      background: #27336e;
       display: grid; place-items: center;
-      padding: 5px;
+      padding: 6px;
     }
     .logo-paw img { width: 100%; height: 100%; object-fit: contain; }
     .logo-text .brand { font-family: "Plus Jakarta Sans", sans-serif; font-size: 14px; font-weight: 800; }
@@ -172,10 +172,14 @@
     .hero-trust span { display: inline-flex; align-items: center; gap: 6px; }
     .hero-hero-img { position: relative; }
     .hero-img-wrap {
-      max-width: 380px; margin: 0 auto;
+      max-width: 420px; margin: 0 auto;
+      border-radius: 32px;
+      background: #27336e;
+      padding: 36px;
+      box-shadow: var(--shadow-glow);
     }
     .hero-img-wrap img {
-      width: 100%; aspect-ratio: 1/1; object-fit: contain; padding: 28px; background: var(--bg);
+      width: 100%; aspect-ratio: 1/1; object-fit: contain;
     }
     .floating-card {
       position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%);
@@ -336,9 +340,9 @@
   <header>
     <div class="header-inner">
       <a href="#" class="logo">
-        <div class="story-ring"><div class="logo-paw inner">
+        <div class="logo-paw">
           <img src="src/assets/coellho-logo.jpg" alt="Coellho Clinica Veterinaria">
-        </div></div>
+        </div>
         <div class="logo-text">
           <div class="brand">Coellho</div>
           <div class="sub">Clínica Veterinária</div>
@@ -380,10 +384,8 @@
         </div>
       </div>
       <div class="hero-hero-img">
-        <div class="story-ring hero-img-wrap">
-          <div class="inner">
-            <img src="src/assets/coellho-logo.jpg" alt="Coellho Clinica Veterinaria">
-          </div>
+        <div class="hero-img-wrap">
+          <img src="src/assets/coellho-logo.jpg" alt="Coellho Clinica Veterinaria">
         </div>
         <div class="floating-card">
           <div class="fc-icon">
@@ -543,9 +545,9 @@
   <footer>
     <div class="footer-inner">
       <div class="logo">
-        <div class="story-ring"><div class="logo-paw inner">
+        <div class="logo-paw">
           <img src="src/assets/coellho-logo.jpg" alt="Coellho Clinica Veterinaria">
-        </div></div>
+        </div>
         <div class="logo-text">
           <div class="brand">Coellho</div>
           <div class="sub">Clínica Veterinária</div>
