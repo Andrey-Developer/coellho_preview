@@ -72,7 +72,9 @@ function Nav() {
           <a href="#contato" className="transition-colors hover:text-navy">Contato</a>
         </nav>
         <a
-          href={`tel:+555134212022`}
+          href={WHATSAPP}
+          target="_blank"
+          rel="noreferrer"
           className="hidden items-center gap-2 rounded-full bg-gold px-4 py-2 text-sm font-bold text-gold-foreground shadow-[var(--shadow-gold)] transition-transform hover:scale-105 sm:inline-flex"
         >
           <Phone className="h-4 w-4" />
@@ -124,7 +126,9 @@ function Hero() {
               Falar no WhatsApp
             </a>
             <a
-              href={`tel:+555134212022`}
+              href={WHATSAPP}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-bold text-gold-foreground shadow-[var(--shadow-gold)] transition-all hover:scale-105"
             >
               {PHONE_DISPLAY}
@@ -181,7 +185,7 @@ function Hero() {
             <Phone className="h-5 w-5 shrink-0 text-gold" />
             <p>
               Informações e Agendamentos:{" "}
-              <a href="tel:+555134212022" className="font-display text-base font-extrabold text-gold hover:underline">
+              <a href={WHATSAPP} target="_blank" rel="noreferrer" className="font-display text-base font-extrabold text-gold hover:underline">
                 51 3421.2022
               </a>
             </p>
@@ -319,7 +323,7 @@ function Contact() {
               </div>
               <div className="min-w-0">
                 <p className="text-xs font-semibold uppercase tracking-wider text-navy/50">Telefone / WhatsApp</p>
-                <a href="tel:+555134212022" className="mt-1 block font-display text-xl font-extrabold text-navy hover:text-gold">
+                <a href={WHATSAPP} target="_blank" rel="noreferrer" className="mt-1 block font-display text-xl font-extrabold text-navy hover:text-gold">
                   {PHONE_DISPLAY}
                 </a>
               </div>
